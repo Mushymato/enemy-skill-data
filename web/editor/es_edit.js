@@ -139,6 +139,7 @@ function loadEnemyForm() {
                 statusMsg.innerHTML = '';
                 statusMsg.style.display = 'none';
                 esData = JSON.parse(this.responseText);
+                document.getElementById('enemy_level_select').innerHTML = '';
                 populateEnemyForm();
             } else {
                 statusMsg.innerHTML = 'Enemy data not found.';
